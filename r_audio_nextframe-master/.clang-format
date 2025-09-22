@@ -1,0 +1,134 @@
+---
+# Google C++规范的clang-format配置
+BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+AccessModifierOffset: -2
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignOperands: true
+AlignTrailingComments: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: true
+AlwaysBreakTemplateDeclarations: true
+BinPackArguments: true
+BinPackParameters: true
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterObjCDeclaration: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: false
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Attach
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializersBeforeComma: false
+BreakAfterJavaFieldAnnotations: false
+BreakStringLiterals: true
+Cpp11BracedListStyle: true
+DerivePointerAlignment: true
+ExperimentalAutoDetectBinPacking: false
+ForEachMacros: [ foreach, Q_FOREACH, BOOST_FOREACH ]
+IncludeCategories:
+  - Regex: '^<.*\.h>$'
+    Priority: 1
+  - Regex: '^<.*\.hpp>$'
+    Priority: 1
+  - Regex: '^<.*\.hxx>$'
+    Priority: 1
+  - Regex: '^<.*\.inl>$'
+    Priority: 1
+  - Regex: '^<.*\.inc>$'
+    Priority: 1
+  - Regex: '^<.*\.ipp>$'
+    Priority: 1
+  - Regex: '^<.*\.ixx>$'
+    Priority: 1
+  - Regex: '^<.*\.txx>$'
+    Priority: 1
+  - Regex: '^<.*\.cxx>$'
+    Priority: 1
+  - Regex: '^<.*\.cuh>$'
+    Priority: 1
+  - Regex: '^<.*\.cuhh>$'
+    Priority: 1
+  - Regex: '^<.*\.cu>$'
+    Priority: 1
+  - Regex: '^".*\.h"$'
+    Priority: 2
+  - Regex: '^".*\.hpp"$'
+    Priority: 2
+  - Regex: '^".*\.hxx"$'
+    Priority: 2
+  - Regex: '^".*\.inl"$'
+    Priority: 2
+  - Regex: '^".*\.inc"$'
+    Priority: 2
+  - Regex: '^".*\.ipp"$'
+    Priority: 2
+  - Regex: '^".*\.ixx"$'
+    Priority: 2
+  - Regex: '^".*\.txx"$'
+    Priority: 2
+  - Regex: '^".*\.cxx"$'
+    Priority: 2
+  - Regex: '^".*\.cuh"$'
+    Priority: 2
+  - Regex: '^".*\.cuhh"$'
+    Priority: 2
+  - Regex: '^".*\.cu"$'
+    Priority: 2
+  - Regex: '^".*"$'
+    Priority: 3
+  - Regex: '^<.*>$'
+    Priority: 4
+IncludeIsMainRegex: '([-_](test|unittest))?$'
+IndentCaseLabels: true
+IndentWrappedFunctionNames: false
+JavaScriptQuotes: Leave
+JavaScriptWrapImports: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MacroBlockBegin: ''
+MacroBlockEnd: ''
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None
+ObjCBlockIndentWidth: 2
+ObjCSpaceAfterProperty: false
+ObjCSpaceBeforeProtocolList: false
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 1250
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 200
+PointerAlignment: Left
+ReflowComments: true
+SortIncludes: true
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: false
+SpacesInContainerLiterals: true
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+Standard: Auto
